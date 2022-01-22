@@ -1,7 +1,5 @@
 # Составить частотный словарь элементов двумерного массива
 
-from curses import keyname
-from multiprocessing.sharedctypes import Value
 import random
 from all_def import fill, print_ar
 
