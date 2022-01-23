@@ -2,10 +2,11 @@
 
 num = int(input('введите число: '))
 
-count = 0
-
-while num != 0:
-    num //= 10
-    count += 1
+def how_long_number(number):
+    count = 0
+    while number != 0:
+        number //= 10
+        count += 1
+    return count
     
-print(count)
+print(how_long_number(num))

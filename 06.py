@@ -1,5 +1,5 @@
 ## Выяснить является ли число чётным
-from cProfile import run
+
 import random
 num = random.randint(1,9999)
 

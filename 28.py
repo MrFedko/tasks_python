@@ -3,10 +3,12 @@
 import random
 num = random.randint(300, 9999)
 print(num)
-result = 0
 
-while num != 0:
-    result += num % 10
-    num //= 10
+def how_much_digits(number):
+    result = 0
+    while number != 0:
+        result += number % 10
+        number //= 10
+    return result
     
-print(result)
+print(how_much_digits(num))
