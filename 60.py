@@ -3,7 +3,7 @@
 import random
 from all_def import fill, print_ar
 
-m = 3
+m = 10
 array = [[0 for i in range(0, m)] for j in range(0, m)]
 
 def dictinary(any):
@@ -21,5 +21,5 @@ fill(array)
 print_ar(array)
 result = dictinary(array)
 
-for i in result:
-    print(f'{i}: {result[i]}')
+for key,value in result.items():
+    print(f'{key}: {value} - {round(value/((m * m) / 100), 2)}%')

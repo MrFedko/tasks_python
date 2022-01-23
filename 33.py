@@ -5,11 +5,14 @@ array = []
 for i in range(1, 13):
     array.append(random.randint(-9, 9))
     
-result_min = 0
-result_plus = 0
-for i in array:
-    if i < 0:
-        result_min += i
-    else:
-        result_plus += i
-print(array, result_plus, result_min)
+def summ_array(any):
+    result_min = 0
+    result_plus = 0
+    for i in any:
+        if i < 0:
+            result_min += i
+        else:
+            result_plus += i
+    return result_min, result_plus
+
+print(array, summ_array(array))

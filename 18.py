@@ -1,8 +1,5 @@
 # # Проверить истинность утверждения ¬(X ⋁ Y) = ¬X ⋀ ¬Y
 
-from xmlrpc.client import boolean
-
-
 def TrueFalse(x, y):
     FlagX = bool(x != 0)
     FlagY = bool(y != 0)
