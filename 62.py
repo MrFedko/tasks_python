@@ -42,6 +42,6 @@ def delete_str_row(any, str, row):
 fill(array)
 min_num, min_str, min_row = search_position(array)
 print_ar(array)
-print(min_num, min_str, min_row)
+print(f'минимальное число - {min_num} [{min_str}][{min_row}]')
 new_array = delete_str_row(array, min_str, min_row)
 print_ar(new_array)
