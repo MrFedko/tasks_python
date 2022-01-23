@@ -9,3 +9,10 @@ def fill(any):
 def print_ar(any):
     for i in any:
         print(i)  
+
+def double_calc(n):
+    result = ''
+    while n != 0:
+        result = str(n % 2) + result
+        n //= 2
+    return result
