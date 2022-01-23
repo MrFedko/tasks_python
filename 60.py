@@ -13,7 +13,7 @@ def dictinary(any):
             if any[i][j] not in my_dict.keys():
                 my_dict[any[i][j]] = 1
             else:
-                my_dict[any[i][j]] = my_dict[any[i][j]] + 1                
+                my_dict[any[i][j]] += 1                
     return my_dict
 
             
