@@ -12,7 +12,7 @@ def fill(any):
 def difference(any_list):
     for i in range(len(any_list)):
         any_list[i] = any_list[i] % 1
-    return round(max(any_list) - min(any_list), 2)
+    return round(max(any_list) - min(any_list),2)
 
 my_list = fill(10)
 print(*my_list)
