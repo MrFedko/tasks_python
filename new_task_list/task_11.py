@@ -4,7 +4,11 @@ n = int(input('Введите сколько чисел последовател
 
 def sequence(number):
     my_list = [1, ]
-    for i in range(number + 1):
-        my_list.append(-3**i)
+    for i in range(1, number):
+        if my_list[i - 1] > 0:
+            my_list.append(-3**i)
+        else:
+            my_list.append(3**i)
     return my_list
+
 print(*sequence(n))
