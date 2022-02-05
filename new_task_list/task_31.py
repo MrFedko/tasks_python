@@ -18,13 +18,10 @@ def search_multipliers(number):
         else:
             divider += 1
     if number > 1:
-        multipliers.append(number)
-    
+        multipliers.append(number)   
     return multipliers
 
 if is_prime(n) == True: 
     print('Это простое число и у него 1 множитель/делитель')
 else:
     print(search_multipliers(n))
-
-
