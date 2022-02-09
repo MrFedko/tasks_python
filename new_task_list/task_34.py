@@ -8,7 +8,7 @@ file.close()
 file_1.close()
 
 x = int(input('введите x: '))
-answer = eval(f'{first_line}+{second_line}'.replace('x', f'{x}'))
+answer = eval(f'{first_line}+{second_line}')
 
 answer_file = open('file_34_answer.txt', 'w')
 answer_file.write(f'при x = {x} \n{first_line}+{second_line} = {answer}')
