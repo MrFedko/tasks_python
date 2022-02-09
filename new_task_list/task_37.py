@@ -9,9 +9,10 @@ def array(any_list):
     for j in range(min(any_list), max(any_list)):
         new_list = [j]
         for i in range(any_list.index(j), len(any_list)):
-            if any_list[i] > new_list[-1]:
+            if any_list[i] - new_list[-1] <= new_list[-1] and any_list[i] > new_list[-1]:
                 new_list.append(any_list[i])
         many_arrays.append(new_list)
+    # return many_arrays
     max_array = []
     for i in many_arrays:
         if len(i) > len(max_array):
