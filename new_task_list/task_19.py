@@ -3,9 +3,8 @@
 import time
 
 def randomizer(n = 10):
-    
     b = round(time.time() * 1000)
     return b % n
 
-print(randomizer(9))
+print(randomizer())
 
