@@ -7,8 +7,7 @@ import random
 k = int(input('задайте натуральную степень k: '))
 
 def random_list(num = 10):
-    new_list = [random.randint(0, 100) for i in range(num)]
-    return new_list
+    return [random.randint(0, 100) for i in range(num)]
 
 def mnogochlen(number, my_list = random_list()):
     file = open('file_33_task.txt', 'w')
