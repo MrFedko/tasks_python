@@ -7,4 +7,3 @@ def randomizer(n = 10):
     return b % n
 
 print(randomizer())
-
