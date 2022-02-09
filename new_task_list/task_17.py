@@ -1,10 +1,7 @@
 # Задать список из N элементов, заполненных числами из [-N, N]. 
 # Найти произведение элементов на указанных позициях. Позиции хранятся в файле file.txt в одной строке одно число
 def my_new_list(number):
-    my_list = []
-    for i in range(-1 * number, number + 1):
-        my_list.append(int(i))
-    return my_list
+    return [x for x in range(-number, number + 1)]
 
 def my_set(file):
     my_file = open(file, 'r')
